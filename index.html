@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>detailed.art - AI-Powered Image Enhancement</title>
+    <meta name="description" content="Elevate your images with AI-powered enhancement. Upscale, modify, and create stunning visuals using cutting-edge artificial intelligence.">
+    <meta name="keywords" content="AI image enhancement, image upscaling, text-guided image modification, AI image generation">
+    <meta name="author" content="detailed.art">
+    <meta property="og:title" content="detailed.art - AI-Powered Image Enhancement">
+    <meta property="og:description" content="Elevate your images with AI-powered enhancement. Upscale, modify, and create stunning visuals using cutting-edge artificial intelligence.">
+    <meta property="og:image" content="https://detailed.art/og-image.jpg">
+    <meta property="og:url" content="https://detailed.art">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://detailed.art">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="/img/logo.png" alt="detailed.art logo">det<span class="accent">ai</span>led.art
+            </div>
+<!--            <a href="#" class="cta-button">Take our survey</a>-->
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <section class="hero">
+        <h1>Elevate Your Images with AI-Powered Enhancement</h1>
+        <p>Unlock the full potential of your visuals using cutting-edge artificial intelligence</p>
+        <form action="#" method="post">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit" class="cta-button">Join Waitlist</button>
+        </form>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <i class="fas fa-expand-arrows-alt"></i>
+            <h3>Intelligent Image Upscaling</h3>
+            <p>It is not just upscaling, it is adding the details you want. Guide the AI to upscale your images with the details you want to see. You can tweak how creative the AI should be, and the AI will do the rest. It is an infinite magnifying glass.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-magic"></i>
+            <h3>Text-Guided Modification</h3>
+            <p>Transform your images with the power of words. Our text-to-image technology allows you to describe the changes you want to see, and watch as AI brings your vision to life. From adjusting lighting and color schemes to adding or removing elements. Endless possibilities.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-paint-brush"></i>
+            <h3>AI-Powered Image Generation</h3>
+            <p>Unleash your creativity with our state-of-the-art AI image generation. Simply describe the image you want to create, and watch as our AI interprets your words into visually stunning artwork. This feature is perfect for conceptual artists, designers, and anyone looking to bring their imaginative ideas to life.</p>
+        </div>
+    </section>
+
+    <section class="comparison">
+        <h2>See the Difference</h2>
+        <div class="image-slider">
+            <img src="img/examples/exA2.jpg" alt="After" class="slider-after">
+            <div class="image-slider-before">
+                <img src="img/examples/exA1.jpg" alt="Before" class="slider-before">
+            </div>
+            <div class="slider-handle"></div>
+        </div>
+        <p class="image-description">Example 1: Upscaling a low-resolution landscape photo to reveal intricate details.</p>
+        <div class="image-select">
+            <img src="/img/examples/exA1.jpg" alt="Example 1" data-image="1" class="selected">
+            <img src="/img/examples/exB1.jpg" alt="Example 2" data-image="2">
+            <img src="/img/examples/exC1.jpg" alt="Example 3" data-image="3">
+        </div>
+    </section>
+
+    <section class="pricing">
+        <h2>Choose Your Enhancement Plan</h2>
+        <div class="pricing-switch">
+            <span>Monthly</span>
+            <label class="switch">
+                <input type="checkbox" id="pricing-toggle">
+                <span class="slider"></span>
+            </label>
+            <span>Annual</span>
+        </div>
+        <div class="plans">
+            <div class="plan">
+                <h3>Starter</h3>
+                <div class="plan-price">€20/month</div>
+                <ul class="plan-features">
+                    <li>2,000 enhancement tokens</li>
+                    <li>Access to all features</li>
+                    <li>Email support</li>
+                </ul>
+                <button type="button" class="cta-button-disabled" disabled>Comming soon</button>
+            </div>
+            <div class="plan">
+                <h3>Pro</h3>
+                <div class="plan-price">€50/month</div>
+                <ul class="plan-features">
+                    <li>6,000 enhancement tokens</li>
+                    <li>Access to all features</li>
+                    <li>Priority email support</li>
+                </ul>
+                <button type="button" class="cta-button-disabled" disabled>Comming soon</button>
+            </div>
+            <div class="plan">
+                <h3>Enterprise</h3>
+                <div class="plan-price">€100/month</div>
+                <ul class="plan-features">
+                    <li>15,000 enhancement tokens</li>
+                    <li>Access to all features</li>
+                    <li>24/7 priority support</li>
+                </ul>
+                <button type="button" class="cta-button-disabled" disabled>Comming soon</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero">
+        <h2>Join the Waitlist</h2>
+        <p>Be among the first to experience the future of image enhancement. Sign up for exclusive early access and updates.</p>
+        <form action="#" method="post">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit" class="cta-button">Join Waitlist</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 detailed.art. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    // Image slider functionality
+    const slider = document.querySelector('.image-slider');
+    const beforeImage = document.querySelector('.image-slider-before');
+    const beforeImageImg = beforeImage.querySelector('img');
+    const sliderHandle = document.querySelector('.slider-handle');
+    let isResizing = false;
+
+    slider.addEventListener('mousedown', startResize);
+    slider.addEventListener('touchstart', startResize);
+
+    document.addEventListener('mousemove', resize);
+    document.addEventListener('touchmove', resize);
+
+    document.addEventListener('mouseup', stopResize);
+    document.addEventListener('touchend', stopResize);
+
+    function startResize(e) {
+        e.preventDefault();
+        isResizing = true;
+    }
+
+    function stopResize() {
+        isResizing = false;
+    }
+
+    function resize(e) {
+        if (!isResizing) return;
+
+        const sliderRect = slider.getBoundingClientRect();
+        const newWidth = ((e.clientX || e.touches[0].clientX) - sliderRect.left) / sliderRect.width;
+        setWidth(newWidth);
+    }
+
+    function setWidth(newWidth) {
+        const width = Math.max(0, Math.min(1, newWidth)) * 100;
+        beforeImage.style.width = `${width}%`;
+        sliderHandle.style.left = `${width}%`;
+        beforeImageImg.style.width = `${100/width*100}%`;
+    }
+
+    // Image selection functionality
+    const imageSelect = document.querySelector('.image-select');
+    const sliderAfter = document.querySelector('.slider-after');
+    const sliderBefore = document.querySelector('.slider-before');
+    const imageDescription = document.querySelector('.image-description');
+
+    const examples = [
+        {
+            before: '/img/examples/exA1.jpg',
+            after: '/img/examples/exA2.jpg',
+            description: 'Example 1: Upscaling a photo of a model in the forest.'
+        },
+        {
+            before: '/img/examples/exB1.jpg',
+            after: '/img/examples/exB2.jpg',
+            description: 'Example 2: Upscaling a low-resolution photo of food.'
+        },
+        {
+            before: '/img/examples/exC1.jpg',
+            after: '/img/examples/exC2.jpg',
+            description: 'Example 3: Remove the woman\'s earrings. Replace the mug with a clear glass filled with sparkling iced cola.'
+        }
+    ];
+
+    imageSelect.addEventListener('click', (e) => {
+        if (e.target.tagName === 'IMG') {
+            const imageNumber = e.target.dataset.image;
+            const example = examples[imageNumber - 1];
+
+            // Fade out current images and description
+            sliderAfter.style.opacity = 0;
+            sliderBefore.style.opacity = 0;
+            imageDescription.style.opacity = 0;
+
+            setTimeout(() => {
+                sliderAfter.src = example.after;
+                sliderBefore.src = example.before;
+                imageDescription.textContent = example.description;
+
+                // Fade in new images and description
+                sliderAfter.style.opacity = 1;
+                sliderBefore.style.opacity = 1;
+                imageDescription.style.opacity = 1;
+                setWidth(0.5);
+            }, 300);
+
+            // Update selected state
+            imageSelect.querySelectorAll('img').forEach(img => img.classList.remove('selected'));
+            e.target.classList.add('selected');
+        }
+    });
+
+    // Pricing toggle functionality
+    const pricingToggle = document.getElementById('pricing-toggle');
+    const planPrices = document.querySelectorAll('.plan-price');
+    const plans = document.querySelectorAll('.plan');
+    const monthlyPrices = ['€20', '€50', '€100'];
+    const annualPrices = ['€200', '€500', '€1000'];
+
+    pricingToggle.addEventListener('change', () => {
+        const prices = pricingToggle.checked ? annualPrices : monthlyPrices;
+        const period = pricingToggle.checked ? '/year' : '/month';
+
+        plans.forEach((plan, index) => {
+            plan.style.transform = 'scale(0.90)';
+            plan.style.opacity = '0.5';
+
+            setTimeout(() => {
+                planPrices[index].textContent = prices[index] + period;
+                plan.style.transform = 'scale(1)';
+                plan.style.opacity = '1';
+            }, 150);
+        });
+    });
+</script>
+</body>
+</html>
