@@ -15,15 +15,17 @@
     <link rel="canonical" href="https://detailed.art">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
     <div class="container">
         <nav>
             <div class="logo">
-                <img src="/img/logo.png" alt="detailed.art logo">det<span class="accent">ai</span>led.art
+                <img src="/img/logo.png" alt="detailed.art logo" width="32" height="32">det<span class="accent">ai</span>led.art
             </div>
-<!--            <a href="#" class="cta-button">Take our survey</a>-->
         </nav>
     </div>
 </header>
@@ -32,26 +34,22 @@
     <section class="hero">
         <h1>Elevate Your Images with AI-Powered Enhancement</h1>
         <p>Unlock the full potential of your visuals using cutting-edge artificial intelligence</p>
-<!--        <form action="#" method="post">-->
-<!--            <input type="email" placeholder="Enter your email" required>-->
-<!--            <button type="submit" class="cta-button">Join Waitlist</button>-->
-<!--        </form>-->
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSfCGvYDoaTyEHKP5IDQbCaY3Y3yhMlTEgVksr7feB0rKVfHxg/viewform" class="cta-button">Join Waitlist</a>
     </section>
 
     <section class="features">
         <div class="feature">
-            <i class="fas fa-expand-arrows-alt"></i>
+            <i class="fas fa-expand-arrows-alt" aria-hidden="true"></i>
             <h3>Intelligent Image Upscaling</h3>
-            <p>It is not just upscaling, it is adding the details you want. Guide the AI to upscale your images with the details you want to see. You can tweak how creative the AI should be, and the AI will do the rest. It is an infinite magnifying glass.</p>
+            <p>It's not just upscaling, it's adding the details you want. Guide the AI to upscale your images with the details you want to see. You can tweak how creative the AI should be, and the AI will do the rest. It's an infinite magnifying glass.</p>
         </div>
         <div class="feature">
-            <i class="fas fa-magic"></i>
+            <i class="fas fa-magic" aria-hidden="true"></i>
             <h3>Text-Guided Modification</h3>
             <p>Transform your images with the power of words. Our text-to-image technology allows you to describe the changes you want to see, and watch as AI brings your vision to life. From adjusting lighting and color schemes to adding or removing elements. Endless possibilities.</p>
         </div>
         <div class="feature">
-            <i class="fas fa-paint-brush"></i>
+            <i class="fas fa-paint-brush" aria-hidden="true"></i>
             <h3>AI-Powered Image Generation</h3>
             <p>Unleash your creativity with our state-of-the-art AI image generation. Simply describe the image you want to create, and watch as our AI interprets your words into visually stunning artwork. This feature is perfect for conceptual artists, designers, and anyone looking to bring their imaginative ideas to life.</p>
         </div>
@@ -64,7 +62,7 @@
             <div class="image-slider-before">
                 <img src="img/examples/exA1.jpg" alt="Before" class="slider-before">
             </div>
-            <div class="slider-handle"></div>
+            <div class="slider-handle" role="slider" aria-label="Comparison slider"></div>
         </div>
         <p class="image-description">Example 1: Upscaling a low-resolution landscape photo to reveal intricate details.</p>
         <div class="image-select">
@@ -79,7 +77,7 @@
         <div class="pricing-switch">
             <span>Monthly</span>
             <label class="switch">
-                <input type="checkbox" id="pricing-toggle">
+                <input type="checkbox" id="pricing-toggle" aria-label="Switch between monthly and annual pricing">
                 <span class="slider"></span>
             </label>
             <span>Annual</span>
@@ -93,7 +91,7 @@
                     <li>Access to all features</li>
                     <li>Email support</li>
                 </ul>
-                <button type="button" class="cta-button-disabled" disabled>Comming soon</button>
+                <button type="button" class="cta-button-disabled" disabled>Coming soon</button>
             </div>
             <div class="plan">
                 <h3>Pro</h3>
@@ -103,7 +101,7 @@
                     <li>Access to all features</li>
                     <li>Priority email support</li>
                 </ul>
-                <button type="button" class="cta-button-disabled" disabled>Comming soon</button>
+                <button type="button" class="cta-button-disabled" disabled>Coming soon</button>
             </div>
             <div class="plan">
                 <h3>Enterprise</h3>
@@ -113,7 +111,7 @@
                     <li>Access to all features</li>
                     <li>24/7 priority support</li>
                 </ul>
-                <button type="button" class="cta-button-disabled" disabled>Comming soon</button>
+                <button type="button" class="cta-button-disabled" disabled>Coming soon</button>
             </div>
         </div>
     </section>
@@ -121,17 +119,18 @@
     <section class="hero">
         <h2>Join the Waitlist</h2>
         <p>Be among the first to experience the future of image enhancement. Sign up for exclusive early access and updates.</p>
-<!--        <form action="#" method="post">-->
-<!--            <input type="email" placeholder="Enter your email" required>-->
-<!--            <button type="submit" class="cta-button">Join Waitlist</button>-->
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfCGvYDoaTyEHKP5IDQbCaY3Y3yhMlTEgVksr7feB0rKVfHxg/viewform" class="cta-button">Join Waitlist</a>
-<!--        </form>-->
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfCGvYDoaTyEHKP5IDQbCaY3Y3yhMlTEgVksr7feB0rKVfHxg/viewform" class="cta-button">Join Waitlist</a>
     </section>
 </main>
 
 <footer>
     <div class="container">
-        <p>&copy; 2024 detailed.art. All rights reserved.</p>
+        <p>&copy; 2025 detailed.art. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="/privacy.html">Privacy Policy</a>
+            <span class="separator">|</span>
+            <a href="/terms.html">Terms of Service</a>
+        </div>
     </div>
 </footer>
 
